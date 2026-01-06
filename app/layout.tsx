@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans  } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} antialiased w-screen h-screen text-zinc-100 bg-zinc-950`}
+        className={`${dmSans.className} antialiased w-screen h-screen text-zinc-100 bg-zinc-950`}
       >
         <div className="flex size-full overflow-hidden">
           {children}
