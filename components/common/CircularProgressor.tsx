@@ -13,7 +13,7 @@ export function CircularProgressor({ percentage, size = 80, strokeSize = 2, chil
   const offset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="relative flex items-center justify-center" style={{ width: size, height: size }} {...props}>
+    <div className="relative flex items-center justify-center" {...props}>
       <svg className="transform -rotate-90" width={size} height={size}>
         <circle
           cx={size / 2}
