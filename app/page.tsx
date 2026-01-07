@@ -69,8 +69,8 @@ export default function Home() {
         </section>
         <section className="border-b border-zinc-800"></section>
       </header>
-      <main className="flex flex-1 transition-all duration-400 p-4">
-        <section className="flex flex-col gap-4 justify-center">
+      <main className="flex flex-1 transition-all duration-400 p-4 h-full">
+        <section className="w-fit h-full flex flex-col justify-center">
           <TaticsSwitcher taticName="Attack" taticTitle="4-3-3" />
           <FootballField/>
           <TaticMetrics metrics={activeSchemeMetrics} />

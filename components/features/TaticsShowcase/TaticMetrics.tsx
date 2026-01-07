@@ -10,7 +10,7 @@ interface TaticMetricsProps {
 }
 
 export function TaticMetrics({ metrics }: TaticMetricsProps) {
-    return <div className="flex items-center gap-4 w-full ">
+    return <div className="flex items-center gap-4 w-full justify-between">
         {metrics.map(({title, value}) => (<ProgressiveData key={title} percentage={value} title={title} value={value} />))}
     </div>
 }
